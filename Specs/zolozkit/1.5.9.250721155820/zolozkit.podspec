@@ -32,8 +32,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Cherry' do |cherry|
-  cherry.pod_target_xcconfig = {
-    'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,"_OBJC_CLASS_$_PodsDummy_Pods_APBToygerFacade" -Wl,-U,"_OBJC_METACLASS_$_PodsDummy_Pods_APBToygerFacade"'}
+
   end
   s.subspec 'ZolozDocScan' do |scan|
     scan.vendored_frameworks = 'ZolozDocScan.framework'
